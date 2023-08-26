@@ -157,10 +157,10 @@ class StyleSelectorXL(scripts.Script):
     def after_component(self, component, **kwargs):
         # https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/7456#issuecomment-1414465888 helpfull link
         # Find the text2img textbox component
-        if kwargs.get("elem_id") == "txt2img_prompt":  # postive prompt textbox
+        if kwargs.get("elem_id") == "txt2img_prompt":  # positive prompt textbox
             self.boxx = component
         # Find the img2img textbox component
-        if kwargs.get("elem_id") == "img2img_prompt":  # postive prompt textbox
+        if kwargs.get("elem_id") == "img2img_prompt":  # positive prompt textbox
             self.boxxIMG = component
 
 def make_axis_options():

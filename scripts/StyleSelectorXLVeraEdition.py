@@ -125,7 +125,7 @@ class StyleSelectorXL(scripts.Script):
 
     def ui(self, is_img2img):
         with gr.Group():
-            with gr.Accordion("Style Selector", open=True):
+            with gr.Accordion("Style Selector", open=False):
                 is_enabled = gr.Checkbox(
                     value=True, label="Enable Style Selector")
                 style = gr.Dropdown(

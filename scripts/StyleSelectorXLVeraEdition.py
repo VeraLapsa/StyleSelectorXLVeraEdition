@@ -41,7 +41,7 @@ def read_sdxl_styles(json_data):
 def getStyles():
     global stylespath
     global valid_style_names
-    json_path = os.path.join(scripts.basedir(), 'sdxl_styles_jean.json')
+    json_path = os.path.join(scripts.basedir(), 'sdxl_styles.json')
     stylespath = json_path
     json_data = get_json_content(json_path)
     styles = read_sdxl_styles(json_data)
